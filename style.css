@@ -1,39 +1,88 @@
 a {
     color : mediumslateblue;
     text-decoration: none;
- 
-  }
-  h1{
-     border: 1px gainsboro solid ;
-     background-color: gainsboro;
-     margin: 50px;
-     text-align: center;
-     font-size: 70px; 
-     line-height: 250px;
-     
- }
- 
- nav ol{
-     border-right: 1px black solid;
-     width: 100px;
-     height: 200px;
-     margin: 0px;
-     padding: 20px;
- }
- h3{
-     text-align: right;
-     padding-right: 50;
- }
- #grid{
-     display: grid;
-     grid-template-columns: 200px 1fr;
- 
- }
- @media(max-width: 800px){
-     #grid{
-         display: block;
+}
+#titleName{
+    border: 1px gainsboro solid ;
+    background-color: gainsboro;
+    margin: 50px;
+    text-align: center;
+    font-size: 70px; 
+    line-height: 250px;
+}
+#MidTitle{
+    font-size: 2.5rem;
+}
+nav ul{
+    border-right: 1px black solid;
+    width: 145px;
+    height:100%;
+    margin: 0px;
+    padding: 20px;
+    list-style: none;
+    font-size: 20px;
+}
+nav ul li{
+    width: 150px;
+}
+nav ul li:hover{
+    background-color: greenyellow;
+}
+
+#nickname{
+    text-align: right;
+    padding-right: 50;
+}
+#MainText{
+    display: grid;
+    grid-template-columns: 200px 1fr;
+}
+@media(max-width: 800px)
+/* 800px이하일떄 작용 */
+{
+    #MainText{
+        display: block;
      }
-     nav ol{
-     border-right: none;
-           }
- }
+    nav ul{
+        border-right: none;
+      }
+    li{
+        width: none;
+        display: inline-block
+    }
+}
+#img1{
+    /* 사진을 왼쪽으로 배열 */
+    float: left;
+}
+
+#img2{
+    float: left;
+    -webkit-transition: all 500ms cubic-bezier(0.680, 0, 0.265, 1); /* older webkit */
+    -webkit-transition: all 500ms cubic-bezier(0.680, -0.550, 0.265, 1.550);
+    -moz-transition: all 500ms cubic-bezier(0.680, -0.550, 0.265, 1.550);
+    -o-transition: all 500ms cubic-bezier(0.680, -0.550, 0.265, 1.550);
+        transition: all 500ms cubic-bezier(0.680, -0.550, 0.265, 1.550); /* easeInOutBack */
+
+        -webkit-transition-timing-function: cubic-bezier(0.680, 0, 0.265, 1); /* older webkit */
+        -webkit-transition-timing-function: cubic-bezier(0.680, -0.550, 0.265, 1.550);
+        -moz-transition-timing-function: cubic-bezier(0.680, -0.550, 0.265, 1.550);
+        -o-transition-timing-function: cubic-bezier(0.680, -0.550, 0.265, 1.550);
+        transition-timing-function: cubic-bezier(0.680, -0.550, 0.265, 1.550); /* easeInOutBack */
+}
+#img2:hover{
+    width: 500px; 
+   
+
+}
+
+#night_day{
+        position: fixed;
+        top: 0;
+        right: 0;
+        border-radius: 80px / 40px;
+        width: 50px;
+        color: black;
+        opacity: 0.5;
+    
+    }
