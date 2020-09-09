@@ -4,55 +4,31 @@
 <title>사회</title>
 <meta charset="utf-8">  
 <style>
-    a {
-   color : mediumslateblue;
-   text-decoration: none;
-    }
-    h1{
-    border: 1px gainsboro solid ;
-    background-color: gainsboro;
-    margin: 50px;
-    text-align: center;
-    font-size: 70px; 
-    line-height: 250px;
-    }
-    nav ul{
-    border-right: 1px black solid;
-    width: 145px;
-    height:100%;
-    margin: 0px;
-    padding: 20px;
-    list-style: none;
-    font-size: 20px;
-    }
-    h3{
-    text-align: right;
-    padding-right: 50;
-    }
-    #grid{
-    display: grid;
-    grid-template-columns: 200px 1fr;
-    }
-    @media(max-width: 800px){
-    #grid{
-        display: block;
-         }
-    nav ol{
-    border-right: none;
-          }
-    }
-    
-    
+
  </style>   
+   <link rel="stylesheet" href="style.css">
    
 </head>        
 <body>
 
-   <h1><a href="index.html">사회</a></h1>
-   <h3>신도고 정희철</h3>
+   <h1 id="titleName"><a href="index.html">사회</a></h1>
+   <h3 id="nickname">정희철</h3>
+   <body id="target">
+   
+    
+    <input id="night_day" type="button" value="night" onclick="
+    if(document.querySelector('#night_day').value === 'night') { 
+        document.querySelector('#target').style.backgroundColor ='black';
+        document.querySelector('body').style.color='white';
+        document.querySelector('#night_day').value = 'day';
+    } else{
+        document.querySelector('#target').style.backgroundColor = 'white';
+        document.querySelector('body').style.color='black';
+        document.querySelector('#night_day').value = 'night';
+    }
+    ">
     <hr>
-<div id="grid">
-    <div id="nav">
+<div id="MainText">
         <nav>
             <ul id="content">  
                 <li><a href="1-1.html">1단원</a></li>
@@ -65,18 +41,57 @@
                 <li><a href="1-8.html">8단원</a></li>     
             </ul> 
         </nav>
-        
+    <article>
+        <div id="article">
+            <h1 id="MidTitle"> 1. 인간, 사회, 환경과 행복</h1>
+<div id="1-1">
+    <h2> 1-1. 인간,사회,환경의 탐구에 통합적 관점이 필요한 이유는?</h2>
+    <h3> &nbsp;&nbsp;1-1-1 통합적 관점에 대한 이해</h3>
     
-    </div id="nav">
-    <div id="article">
-        <h2>For course</h2>
-        <p>   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia totam sed distinctio? Quae voluptatem earum et nesciunt eaque modi ipsam, accusantium minus consequatur tenetur. Minima, sint qui nihil accusantium fuga veritatis nemo molestiae deleniti facilis ullam itaque consequatur suscipit voluptatibus dolorem modi aliquid corporis minus animi rerum hic ut earum voluptates eaque. Excepturi, dolorum. Tenetur natus quo beatae quis nesciunt aspernatur placeat aliquid, nam nisi eligendi ex a fugiat modi cupiditate vitae laborum impedit iste debitis expedita consectetur ut maxime, cumque voluptatem suscipit. Fugiat labore obcaecati eum odio corporis expedita nesciunt, animi consequatur cumque omnis nobis accusamus vel non voluptates id ipsum earum sed explicabo facilis amet aspernatur vero. Eaque recusandae, mollitia minima amet laboriosam nisi natus sapiente ratione explicabo delectus nihil architecto quas tempore possimus iusto eligendi id accusamus similique rerum harum, at unde dolorem. Quibusdam ullam quod ducimus repudiandae voluptates tempora fugiat saepe. Exercitationem et architecto nulla, necessitatibus accusantium sed maxime ipsam deserunt perspiciatis laboriosam optio eaque voluptatem enim, fugiat minima impedit, excepturi unde mollitia! Consequatur ipsa dolore, illo tempore asperiores rerum vero, cum, quibusdam impedit excepturi autem iusto enim iste. Aliquam quis quod impedit est officiis atque. Fugit voluptas quo similique officiis praesentium, eius in officia quae!</p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia totam sed distinctio? Quae voluptatem earum et nesciunt eaque modi ipsam, accusantium minus consequatur tenetur. Minima, sint qui nihil accusantium fuga veritatis nemo molestiae deleniti facilis ullam itaque consequatur suscipit voluptatibus dolorem modi aliquid corporis minus animi rerum hic ut earum voluptates eaque. Excepturi, dolorum. Tenetur natus quo beatae quis nesciunt aspernatur placeat aliquid, nam nisi eligendi ex a fugiat modi cupiditate vitae laborum impedit iste debitis expedita consectetur ut maxime, cumque voluptatem suscipit. Fugiat labore obcaecati eum odio corporis expedita nesciunt, animi consequatur cumque omnis nobis accusamus vel non voluptates id ipsum earum sed explicabo facilis amet aspernatur vero. Eaque recusandae, mollitia minima amet laboriosam nisi natus sapiente ratione explicabo delectus nihil architecto quas tempore possimus iusto eligendi id accusamus similique rerum harum, at unde dolorem. Quibusdam ullam quod ducimus repudiandae voluptates tempora fugiat saepe. Exercitationem et architecto nulla, necessitatibus accusantium sed maxime ipsam deserunt perspiciatis laboriosam optio eaque voluptatem enim, fugiat minima impedit, excepturi unde mollitia! Consequatur ipsa dolore, illo tempore asperiores rerum vero, cum, quibusdam impedit excepturi autem iusto enim iste. Aliquam quis quod impedit est officiis atque. Fugit voluptas quo similique officiis praesentium, eius in officia quae!</p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia totam sed distinctio? Quae voluptatem earum et nesciunt eaque modi ipsam, accusantium minus consequatur tenetur. Minima, sint qui nihil accusantium fuga veritatis nemo molestiae deleniti facilis ullam itaque consequatur suscipit voluptatibus dolorem modi aliquid corporis minus animi rerum hic ut earum voluptates eaque. Excepturi, dolorum. Tenetur natus quo beatae quis nesciunt aspernatur placeat aliquid, nam nisi eligendi ex a fugiat modi cupiditate vitae laborum impedit iste debitis expedita consectetur ut maxime, cumque voluptatem suscipit. Fugiat labore obcaecati eum odio corporis expedita nesciunt, animi consequatur cumque omnis nobis accusamus vel non voluptates id ipsum earum sed explicabo facilis amet aspernatur vero. Eaque recusandae, mollitia minima amet laboriosam nisi natus sapiente ratione explicabo delectus nihil architecto quas tempore possimus iusto eligendi id accusamus similique rerum harum, at unde dolorem. Quibusdam ullam quod ducimus repudiandae voluptates tempora fugiat saepe. Exercitationem et architecto nulla, necessitatibus accusantium sed maxime ipsam deserunt perspiciatis laboriosam optio eaque voluptatem enim, fugiat minima impedit, excepturi unde mollitia! Consequatur ipsa dolore, illo tempore asperiores rerum vero, cum, quibusdam impedit excepturi autem iusto enim iste. Aliquam quis quod impedit est officiis atque. Fugit voluptas quo similique officiis praesentium, eius in officia quae!</p>
-      
-     
-    </div id="article">      
-</div id="grid">
+    <h3> &nbsp;&nbsp;1-1-2 통합적 관점의 필요성</h3>
+</div>
+           
+<div id="1-2">
+    <h2> 1-2. 시대와 지역에 따른 행복의 기준은?</h2>
+    <h3>  &nbsp;&nbsp;1-2-1 행복의 보편성과 상대성</h3>
+    ㅎㄹ
+    <h3>  &nbsp;&nbsp;1-2-2'행복 지수'를 통해 본 행복의 기준</h3>
+    ㄹㅇ
+</div>
+           
+<div id="1-3">
+    <h2> 1-3. 삶의 목적으로서 행복의 의미는?</h2>
+    <h3>  &nbsp;&nbsp;1-3-1 행복의 의미</h3>
+    <h3>  &nbsp;&nbsp;1-3-2 진정으로 행복한 삶</h3>
+</div>
+            
+<div id="1-4">
+    <h2> 1-4. 행복한 삶의 조건은? - 질 높은 정주환경과 경제적 안정 </h2>
+    <h3>  &nbsp;&nbsp;1-4-1 질 높은 정주 환경과 행복의 관계</h3>
+    <h3>  &nbsp;&nbsp;1-4-2 경제적 안정과 행복의 관계</h3>
+</div>
+           
+<div id="1-5">
+    <h2> 1-5. 행복한 삶의 조건은? - 민주주의의 발전과 도덕적 실천</h2>
+    <h3>  &nbsp;&nbsp;1-5-1 민주주의의 발전과 행복의 관계</h3>
+    <h3>  &nbsp;&nbsp;1-5-2 도덕적 실천과 행복의 관계</h3>
+    
+</div>
+          
+           
+
+
+
+            
+            <img id="img1" src="" alt="">
+            <img id="img2" src="" alt="">
+
+           
+         
+        </div id="article">      
+    </article>
+    
+</div id="MainText">
 
             
             
