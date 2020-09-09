@@ -21,6 +21,7 @@ nav ul{
     padding: 20px;
     list-style: none;
     font-size: 20px;
+    
 }
 nav ul li{
     width: 150px;
@@ -51,6 +52,22 @@ nav ul li:hover{
         display: inline-block
     }
 }
+
+table{
+    width: 1000px;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td{
+    border: 1px solid black;
+    padding: 10px;
+}
+@media(max-width:1240px){
+    table{
+        width: 100%;
+    }
+}
+
 #img1{
     /* 사진을 왼쪽으로 배열 */
     float: left;
